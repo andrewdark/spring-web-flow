@@ -27,37 +27,7 @@
 	</style>
 </h:head>
 <h:body>
-<div class="container">
-	<div>
-		<h4 class="alt bottom">
-			<c:if test="${not empty currentUser.name}">
-		    	Welcome, ${currentUser.name} | <a href="${request.contextPath}/spring/logout">Logout</a>
-			</c:if>
-			<c:if test="${empty currentUser.name}">
-				<a href="${request.contextPath}/spring/login">Login</a>
-			</c:if>
-		</h4>
-	</div>
-	<div>
-		<a href="#{request.contextPath}"><img src="${request.contextPath}/images/header.jpg" height="200" width="950" alt="Spring Travel"/></a>
-	</div>		
-	<hr class="space" />
-	<div>
-		<div id="local" class="span-4 colborder">
-			<h3>Comments:</h3>
-			<ui:insert name="notes"/>
-		</div>
-		<div class="span-19 last">
-			<ui:insert name="content"/>
-		</div>
-	</div>
-	<hr class="space" />
-	<div>
-		<a href="http://www.springframework.org">
-			<img src="${request.contextPath}/images/powered-by-spring.png" alt="Powered by Spring" />
-		</a>
-	</div>
-</div>
+
 </h:body>
 </f:view>
 </html>
